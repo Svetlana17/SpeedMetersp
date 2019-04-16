@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/loginscrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="Параметры системы"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Acct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="Акселерометр"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:id="@+id/AcctextX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonGPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPS" />
+
+        <TextView
+            android:id="@+id/AcctextY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/AcctextZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/GirT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Гироскоп"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:id="@+id/GirtextX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/GirtextY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/GirtextZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Ort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ориентация"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:id="@+id/OrintXX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/OrintYY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/OrintZZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/Orint44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/AcctD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Углы наклона"
+            />
+        <TextView
+            android:id="@+id/alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/betta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/gamma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/alphaGirX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+        <TextView
+            android:id="@+id/bettaGirY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/gammaGirZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="" />
+
+
+
+        <TextView
+            android:id="@+id/tan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Угол тангаж:" />
+        <TextView
+            android:id="@+id/cren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Угол крена:" />
+        <EditText
+            android:id="@+id/editK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="Введите K"
+            android:inputType="number|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editK"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:hint="Введите alpha"
+            android:inputType="number|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editShag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editK"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:hint="Укажите частоту опроса"
+            android:inputType="number|numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="398dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonStart"
+
+
+
+                android:layout_height="40dp"
+                android:layout_marginLeft="17dp"
+                android:background="@color/accent_material_dark"
+                android:text="Старт"
+                android:layout_width="30dp" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/thumbColor"
+                android:text="Стоп" />
+
+            <Button
+                android:id="@+id/buttonShare"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/thumbColor"
+                android:paddingLeft="10dp"
+                android:text="Сохранить" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

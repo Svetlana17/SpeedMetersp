@@ -242,23 +242,50 @@ public class MainActivity extends ActionBarActivity implements LocationListener,
         return true;
     }
 
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+////        if (id == R.id.action_settings) {
+////            Intent intent = new Intent(this, Settings.class);
+////            startActivity(intent);
+//
+//                if(id==R.id.map){
+//                    Intent intentmap=new Intent(this, MapActivity.class);
+//                    startActivity(intentmap);
+//              //  }
+//
+//            return true;
+//
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            Intent intent = new Intent(this, Settings.class);
-            startActivity(intent);
-            return true;
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.map:
+                Intent intentmap=new Intent(this, MapActivity.class);
+                    startActivity(intentmap);
+                return true;
+            case R.id.action_settings:
+                Intent intentsetting=new Intent(this, Settings.class);
+                startActivity(intentsetting);
+                return true;
+            case R.id.sensor:
+                Intent intentsensor=new Intent(this, INS.class);
+                startActivity(intentsensor);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
     }
-
     @Override
     public void onLocationChanged(Location location) {
         if (location.hasAccuracy()) {
