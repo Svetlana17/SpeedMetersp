@@ -37,5 +37,7 @@
     <string name="map">map</string>
     <string name="google_maps_key">map</string>
     <string name="sensor">sensor</string>
+    <string name="navigationsystem">Navigation System</string>
+    <string name="gps">gps</string>
 
 </resources>

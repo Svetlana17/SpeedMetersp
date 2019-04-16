@@ -10,5 +10,8 @@
     <item android:id="@+id/sensor"
         android:title="@string/sensor"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/GPS"
+        android:title="@string/gps"
+        android:orderInCategory="100" app:showAsAction="never" />
 
 </menu>

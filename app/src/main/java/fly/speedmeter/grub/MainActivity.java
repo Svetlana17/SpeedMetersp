@@ -33,7 +33,7 @@ import java.util.Locale;
 
 
 public class MainActivity extends ActionBarActivity implements LocationListener, GpsStatus.Listener {
-
+//тут GPS
     private SharedPreferences  sharedPreferences;
     private LocationManager mLocationManager;
     private static Data data;
